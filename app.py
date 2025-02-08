@@ -197,8 +197,8 @@ st.markdown("""
         }
     </style>
 """, unsafe_allow_html=True)
-image_path = r"C:\Users\HEMU\Desktop\ats-mlapp\download (6).png"
-image = r"C:\Users\HEMU\Desktop\ats-mlapp\image.png"
+image_path = r"image.png"
+image = r"image.png"
 # Function to encode image in Base64
 def get_base64_image(image):
     with open(image, "rb") as image_file:
@@ -322,9 +322,9 @@ def get_base64_image(image_path):
         return base64.b64encode(img_file.read()).decode("utf-8")
 
 # Encode the three images
-image1_base64 = get_base64_image("C:/Users/HEMU/Desktop/ats-mlapp/1.png")
-image2_base64 = get_base64_image("C:/Users/HEMU/Desktop/ats-mlapp/2.png")
-image3_base64 = get_base64_image("C:/Users/HEMU/Desktop/ats-mlapp/3.png")
+image1_base64 = get_base64_image("1.png")
+image2_base64 = get_base64_image("2.png")
+image3_base64 = get_base64_image("3.png")
 
 # Creating a responsive layout for three cards
 st.markdown(
